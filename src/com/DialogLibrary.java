@@ -21,9 +21,9 @@ public class DialogLibrary {
         JOptionPane.showMessageDialog(null,
                 "There are only 24 hours in a day",
                 "Warning",
-                JOptionPane.WARNING_MESSAGE);
+                JOptionPane.ERROR_MESSAGE);
     }
-    // TODO Dodanie komunikatu po podaniu blednej godziny
+
 
     //private JPanel prepareButtonPanel() {
     //JPanel buttonPanel = new JPanel();

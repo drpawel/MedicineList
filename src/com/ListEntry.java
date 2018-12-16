@@ -15,11 +15,10 @@ public class ListEntry implements Serializable {
 
     public void takeIt(int time) {
         if (time >= 0 && time<= 24) {
-            // TODO Wylapywanie blednie podanej godziny
             this.time = time;
             isTaken = true;
         } else {
-
+            com.DialogLibrary.showWrongTimeDialog();
         }
     }
 
