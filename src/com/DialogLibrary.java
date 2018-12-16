@@ -17,6 +17,14 @@ public class DialogLibrary {
                 JOptionPane.WARNING_MESSAGE);
     }
 
+    public static void showWrongTimeDialog() {
+        JOptionPane.showMessageDialog(null,
+                "There are only 24 hours in a day",
+                "Warning",
+                JOptionPane.WARNING_MESSAGE);
+    }
+    // TODO Dodanie komunikatu po podaniu blednej godziny
+
     //private JPanel prepareButtonPanel() {
     //JPanel buttonPanel = new JPanel();
     // buttonPanel.add(prepareTakenButton());
@@ -31,7 +39,7 @@ public class DialogLibrary {
     //    JOptionPane.WARNING_MESSAGE);}
 
     public static String showTimeInputDialog() {
-        return JOptionPane.showInputDialog(null, "At what time have you take your medicine?");
+        return JOptionPane.showInputDialog(null, "At what time have you take your medicine? (Give an hour)");
     }
 
     public static String showProductInputDialog() {
@@ -43,4 +51,4 @@ public class DialogLibrary {
 
     }
 }
-// TO DO żeby były przyciski w środku tego a nie że wprowadzamy tekst
+// TODO żeby były przyciski w środku tego a nie że wprowadzamy tekst

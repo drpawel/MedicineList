@@ -14,7 +14,8 @@ public class ListEntry implements Serializable {
     }
 
     public void takeIt(int time) {
-        if (time >= 0) {
+        if (time >= 0 && time<= 24) {
+            // TODO Wylapywanie blednie podanej godziny
             this.time = time;
             isTaken = true;
         } else {
@@ -33,7 +34,7 @@ public class ListEntry implements Serializable {
 
     public String timeToString() {
         if (isTaken) {
-            return time + " you will survive";
+            return "You've taken medicine at " + time;
         } else {
             return "Not Taken";
         }
