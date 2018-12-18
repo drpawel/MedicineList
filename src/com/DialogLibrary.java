@@ -17,16 +17,23 @@ public class DialogLibrary {
                 JOptionPane.WARNING_MESSAGE);
     }
 
+    public static void showWrongTimeDialog() {
+        JOptionPane.showMessageDialog(null,
+                "There are only 24 hours in a day",
+                "Warning",
+                JOptionPane.ERROR_MESSAGE);
+    }
+
 
 
     public static String showTimeInputDialog() {
-        return JOptionPane.showInputDialog(null, "At what time have you take your medicine?");
+        return JOptionPane.showInputDialog(null, "At what time have you take your medicine? (Give an hour)");
     }
 
     public static String showProductInputDialog() {
         return JOptionPane.showInputDialog(null, "What medicine you want to add?");
     }
-    
+
         public static Integer showTakenDialog(){
         Object[] options = {"Taken",
                 "Not taken"};

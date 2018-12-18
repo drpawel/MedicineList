@@ -14,11 +14,16 @@ public class ListEntry implements Serializable {
     }
 
     public void takeIt(int time) {
-        if (time >= 0) {
+        try{
+        if (time >= 0 && time<= 24) {
             this.time = time;
             isTaken = true;
-        } else {
+            }
+        else{
+                com.DialogLibrary.showWrongTimeDialog();
+            }
 
+        }catch (IllegalArgumentException exception) {
         }
     }
 
@@ -33,7 +38,7 @@ public class ListEntry implements Serializable {
 
     public String timeToString() {
         if (isTaken) {
-            return time + " you will survive";
+            return "You've taken medicine at " + time;
         } else {
             return "Not Taken";
         }
