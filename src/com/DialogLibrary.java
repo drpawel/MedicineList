@@ -24,8 +24,6 @@ public class DialogLibrary {
                 JOptionPane.ERROR_MESSAGE);
     }
 
-
-
     public static String showTimeInputDialog() {
         return JOptionPane.showInputDialog(null, "At what time have you take your medicine? (Give an hour)");
     }

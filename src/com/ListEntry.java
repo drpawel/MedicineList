@@ -15,7 +15,7 @@ public class ListEntry implements Serializable {
 
     public void takeIt(int time) {
         try{
-        if (time >= 0 && time<= 24) {
+        if (time >= 0 && time <= 24) {
             this.time = time;
             isTaken = true;
             }
