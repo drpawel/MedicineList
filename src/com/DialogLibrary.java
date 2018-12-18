@@ -17,19 +17,7 @@ public class DialogLibrary {
                 JOptionPane.WARNING_MESSAGE);
     }
 
- //   public static void showStatusMedicineDialog() {
- //       Object[] options = {"Taken",
- //               "Not taken"};
- //       JOptionPane.showOptionDialog(frame,
- //              "Have you take this medicine?",
- //              "Status of medicine",
- //               JOptionPane.YES_NO_OPTION,
- //               JOptionPane.QUESTION_MESSAGE,
- //               null,
- //               options,
- //               options[2]);
- //   }
-//nie wiem dlaczego ale nie chce użyć tego frame 
+
 
     public static String showTimeInputDialog() {
         return JOptionPane.showInputDialog(null, "At what time have you take your medicine?");
@@ -38,7 +26,20 @@ public class DialogLibrary {
     public static String showProductInputDialog() {
         return JOptionPane.showInputDialog(null, "What medicine you want to add?");
     }
-
+    
+        public static Integer showTakenDialog(){
+        Object[] options = {"Taken",
+                "Not taken"};
+        return JOptionPane.showOptionDialog(JOptionPane.getRootFrame(),
+                "Have you take this medinie?",
+                "Status of medicine",
+                JOptionPane.YES_NO_OPTION,
+                JOptionPane.QUESTION_MESSAGE,
+                null,
+                options,
+                options [2]);
+    }
+//pewnie ten Rootframe nie będzie ok ale na razie nic innego nie wymyśle
     //tutaj żeby wywalało to okno Taken Not taken
 }
 // TO DO żeby były przyciski w środku tego a nie że wprowadzamy tekst
