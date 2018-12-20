@@ -35,7 +35,8 @@ public class DialogLibrary {
         public static Integer showTakenDialog(){
         Object[] options = {"Taken",
                 "Not taken"};
-        return JOptionPane.showOptionDialog(JOptionPane.getRootFrame(),
+        return JOptionPane.showOptionDialog(//JOptionPane.getRootFrame(),
+                null
                 "Have you take this medinie?",
                 "Status of medicine",
                 JOptionPane.YES_NO_OPTION,
